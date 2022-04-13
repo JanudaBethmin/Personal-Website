@@ -1,0 +1,222 @@
+body {
+  color: #40514E;
+  /*Changing the main text color to a off-black color */
+  margin: 0;
+  /* Removing default CSS values margins added by the browser */
+  text-align: center;
+  /* Centering all element that doesn't had a width-set */
+  font-family: 'Merriweather', serif;
+  /* Copied from Googlr Fonts, so we don't have to worry about users don't have the fonts.If somehow the font don't load in the browser, it will automatically rendered as a serif font you have already installed.*/
+}
+
+h1 {
+  color: #66BFBF;
+  /* Changing color of the text */
+  font-size: 5.625rem;
+  /* 100% = 1rem = 16px */
+  margin: 0;
+  /* Removing default CSS values margins added by the browser */
+  margin-top: 50px;
+  /* To add a margin between above h1 to get it down little bit */
+  font-family: 'Sacramento', cursive;
+  /* Copied from Googlr Fonts, so we don't have to worry about users don't have the fonts.If somehow the font don't load in the browser, it will automatically rendered as a cursive font you have already installed.*/
+}
+
+h2 {
+  font-weight: normal;
+  /*Changing the boldness of the text. We use noraml to get rid of the bolding and to de-enphasize the text */
+  color: #66BFBF;
+  /* Changing color of the text */
+  font-size: 2.5rem;
+  /* 100% = 1rem = 16px - By using rem and percentages the website will render coreectly even the users font sizes are different. */
+  margin: 0;
+  /* Removing default CSS values margins added by the browser */
+  font-family: 'Montserrat', sans-serif;
+  /* Copied from Googlr Fonts, so we don't have to worry about users don't have the fonts.If somehow the font don't load in the browser, it will automatically rendered as a sans-serif font you have already installed.*/
+}
+
+h3 {
+  color: #11999E;
+  /* Changing color of the text */
+}
+
+p {
+  margin: 0;
+  /* Removing default CSS values margins added by the browser */
+  font-family: 'Montserrat', sans-serif;
+  /* Copied from Googlr Fonts, so we don't have to worry about users don't have the fonts.If somehow the font don't load in the browser, it will automatically rendered as a sans-serif font you have already installed.*/
+}
+
+span {
+  text-decoration: underline;
+  /* Underlining a part of a paragraph using <span> tag */
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  /* We need to position our clouds on the top-container. So in order to use absolute positioning on them, we need to postion parent class into relative. */
+  padding-top: 100px;
+  /* To give some space from the top of the page. Otherwise the content on the top looks like they have sticked to the top. */
+}
+
+.middle-container {
+  padding-top: 100px;
+    /* To add a space between the profile image and the top container. */
+  padding-bottom: 100px;
+  /* To add a space between the button and the bottom section. */
+
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  line-height: 5;
+  /*Creatin spaces between every element belont to this div.default is 1 */
+  padding-top: 20px;
+  padding-bottom: 5px;
+  /*Creating spacec in top and bottom of the div */
+}
+
+.top-cloud {
+  position: absolute;
+  right: 600px;
+  top: 100px;
+  /*We need to remove clouds from the main HTML flow. */
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 600px;
+  top: 350px;
+  /*We need to remove clouds from the main HTML flow. Otherwise the mountain img wan't center because it is inline with the bottom cloud img.*/
+}
+
+a {
+  color: #11999E;
+  text-decoration: none;
+  /*Removing the underlines of the links */
+  margin: 20px 30px;
+  /*Increasing the spacec between hypherlinks that are in inline.*/
+}
+
+a:hover{
+  color:#EAF6F6;
+  /* Changing the color of the links in the hover state */
+}
+
+.skills{
+  padding-top: 50px;
+  /* create a space between hr and the MY Skills heading */
+}
+
+.skill-row{
+  line-height: 2;
+  /*Creating spaces between every element belong to this div. default is 1 */
+  text-align: left;
+  /* aligning text and img in the div to left */
+  width: 50%;
+  /*setting width to 50% of the div */
+  margin: 100px auto;
+  /* Because this element has a width-set, you can center the element using margins.*/
+}
+
+.camera
+{
+  margin-right: 30px;
+  /* to create a space between the floating image and the text wrapped around it. */
+  width:25%;
+  /*decreasing the image width to 25% relative to there parent div (class=skill-row)*/
+  float:left;
+  /* floating the image in left while the text wrap around the image.*/
+}
+
+.computer
+{
+  margin-left: 30px;
+  /* to create a space between the floating image and the text wrapped around it. */
+  width:25%;
+  /*decreasing the image width to 25% relative to there parent div (class=skill-row)*/
+  float:right;
+  /* floating the image in right while the text wrap around the image.*/
+}
+
+/*
+.web-development-p{
+  clear: left;
+  If you don't want to wrap a part of the paragraph, chose the part and use the clear:right; property to only unwrap the selected part.
+}
+.photography-p{
+  clear: right;
+  If you don't want to wrap a part of the paragraph, chose the part and use the clear:left; property to only unwrap the selected part.
+}
+*/
+
+.profile{
+  line-height: 2;
+  /*Creatins spaces between every element belongs to this div.default is 1 */
+  padding-bottom: 50px;
+  /* Creating a space between the hr and the paragraph */
+}
+.profile-img{
+  width:10%;
+  /*decreasing the image width to 10% relative to there parent div (class=profile)*/
+}
+
+/*This part is edited and copied from https://css3buttongenerator.com/ */
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.contact-me{
+  line-height: 2;
+  /*Creatin spaces between every element belont to this div.default is 1 */
+}
+
+.contact-message{
+  width:30%;
+  /*setting width to 30% of the the div */
+  margin: 0px auto;
+  /* Because this element has a width-set, you can center the element using margins.*/
+}
+
+.intro{
+  width:30%;
+  /*setting width to 30% of the the div */
+  margin: 0 auto;
+  /* Because this element has a width-set, you can center the element using margins.*/
+}
+
+.copyright{
+  color:#EAF6F6;
+  font-size: 10px;
+  /* Making the copyright text small, because it is not that important to the user */
+}
+
+hr {
+  border-style: dotted none none none;
+  /* getting only a one side of the border in dotted style */
+  height: 0;
+  width:5%;
+  /* setting height and width to horizontal rule */
+  border-width: 5px;
+  /* incresing the width of the border. dotted- this will increse the size of the dotts and reduce the number of dotts set in to the size of the horizontal rule's width.*/
+  border-color: #11999E;
+}
